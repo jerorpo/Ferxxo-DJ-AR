@@ -213,7 +213,7 @@
         "text": "AYUDA AL FERXXO\nArregla su mesa de DJ para comenzar el show",
         "color": "#ffffff",
         "fontSize": 12,
-        "type": "3d"
+        "type": "overlay"
       },
       "name": "MensajeInicio",
       "order": 7.329680742327094
@@ -256,7 +256,7 @@
         }
       },
       "ui": {
-        "type": "3d",
+        "type": "overlay",
         "width": 100,
         "height": 36,
         "background": "#ad50ff",
