@@ -9,6 +9,7 @@ ecs.registerComponent({
     disco: ecs.eid,
     escenario: ecs.eid,
     personaje: ecs.eid,
+    botonSpotify: ecs.eid,
   },
 
   stateMachine: ({world, eid, schemaAttribute}) => {
@@ -23,6 +24,7 @@ ecs.registerComponent({
         const {
           escenario,
           personaje,
+          botonSpotify,
         } = schemaAttribute.get(eid)
 
         // Ocultar escenario
@@ -34,6 +36,13 @@ ecs.registerComponent({
 
         // Ocultar personaje
         ecs.Scale.set(world, personaje, {
+          x: 0,
+          y: 0,
+          z: 0,
+        })
+
+        // Ocultar botón de Spotify
+        ecs.Scale.set(world, botonSpotify, {
           x: 0,
           y: 0,
           z: 0,
@@ -54,7 +63,7 @@ ecs.registerComponent({
             disco,
           } = schemaAttribute.get(eid)
 
-          // Comprobar que sea uno de nuestros objetos
+          // Comprobar que sea uno de los 3 objetos
           if (
             objeto !== consola &&
             objeto !== controles &&
@@ -85,6 +94,7 @@ ecs.registerComponent({
             const {
               escenario,
               personaje,
+              botonSpotify,
             } = schemaAttribute.get(eid)
 
             // Ocultar mini-juego
@@ -94,19 +104,29 @@ ecs.registerComponent({
               z: 0,
             })
 
-            // Mostrar escenario
+            // Mostrar escenario con su escala original
             ecs.Scale.set(world, escenario, {
-              x: 1,
-              y: 1,
-              z: 1,
+              x: 0.04,
+              y: 0.04,
+              z: 0.04,
             })
 
-            // Mostrar personaje
+            // Mostrar personaje con su escala original
             ecs.Scale.set(world, personaje, {
-              x: 1,
-              y: 1,
-              z: 1,
+              x: 0.517,
+              y: 0.517,
+              z: 0.517,
             })
+
+            // Mostrar botón de Spotify
+            ecs.Scale.set(world, botonSpotify, {
+              x: 2,
+              y: 2,
+              z: 2,
+            })
+
+            console.log('🎤 ESCENARIO Y FERXXO ACTIVADOS')
+            console.log('🎵 BOTÓN SPOTIFY ACTIVADO')
           }
         }
       )

@@ -45,8 +45,8 @@
       "name": "Camera",
       "position": [
         0,
-        6.723450687475747,
-        17.977838327919713
+        9.576581452025257,
+        16.343280921238367
       ],
       "rotation": [
         0.00044368872331410124,
@@ -94,20 +94,20 @@
     "0db679c5-bf9f-4f07-b816-8de4efa54f3c": {
       "id": "0db679c5-bf9f-4f07-b816-8de4efa54f3c",
       "position": [
-        0,
-        0,
-        0
+        0.9621758640402707,
+        0.8405308760900745,
+        10.08175151290597
       ],
       "rotation": [
-        -0.7071067811865475,
+        1,
         0,
         0,
-        0.7071067811865476
+        -6.123233995736766e-17
       ],
       "scale": [
-        2.9000000000000012,
-        2.9000000000000012,
-        2.9000000000000012
+        2.0000000000000004,
+        2.0000000000000004,
+        2.0000000000000004
       ],
       "geometry": null,
       "material": null,
@@ -173,7 +173,7 @@
           "type": "asset",
           "asset": "assets/dj.glb"
         },
-        "animationClip": "",
+        "animationClip": "*",
         "loop": true
       },
       "name": "dj.glb",
@@ -206,7 +206,7 @@
           "type": "asset",
           "asset": "assets/FerxxoCompleto.glb"
         },
-        "animationClip": "",
+        "animationClip": "*",
         "loop": true
       },
       "name": "FerxxoCompleto.glb",
@@ -216,19 +216,19 @@
       "id": "fd53c260-60e0-4a58-b2ad-631870a6a654",
       "position": [
         -0.8032982310357144,
-        -0.803933526929501,
-        2.1356762834277894
+        -0.8039335269295002,
+        6.778689774038353
       ],
       "rotation": [
-        0.7071067811865475,
+        0.7071067811865474,
         0,
         0,
-        0.7071067811865476
+        0.7071067811865477
       ],
       "scale": [
-        13.558620689655179,
-        13.558620689655179,
-        13.558620689655179
+        6.658620689655186,
+        6.658620689655185,
+        6.658620689655185
       ],
       "geometry": null,
       "material": null,
@@ -238,7 +238,7 @@
         "width": 70,
         "height": 10,
         "text": "AYUDA AL FERXXO\nArregla su mesa de DJ para comenzar el show",
-        "color": "#ffffff",
+        "color": "#1ded51",
         "fontSize": 12,
         "type": "3d"
       },
@@ -248,9 +248,9 @@
     "64d82d59-bf85-489c-8c6c-4c39997c4c50": {
       "id": "64d82d59-bf85-489c-8c6c-4c39997c4c50",
       "position": [
-        -0.5677398313539693,
-        -0.5460770395191119,
-        -8.725757942965704
+        -0.8459748158831853,
+        -0.6223465601153263,
+        0.4226789697579379
       ],
       "rotation": [
         0.7071067811865475,
@@ -259,9 +259,9 @@
         0.7071067811865476
       ],
       "scale": [
-        8.8,
-        8.8,
-        8.8
+        7.700000000000002,
+        7.700000000000002,
+        7.700000000000002
       ],
       "geometry": null,
       "material": null,
@@ -271,7 +271,7 @@
         "type": "3d",
         "width": 100,
         "height": 36,
-        "background": "#ad50ff",
+        "background": "#27b958",
         "borderRadius": 18,
         "flexDirection": "row",
         "backgroundOpacity": 1,
@@ -364,6 +364,10 @@
             "personaje": {
               "type": "entity",
               "id": "df62e20f-b541-4b07-acdb-0f60eb725d37"
+            },
+            "botonSpotify": {
+              "type": "entity",
+              "id": "4aad9dd1-6fc2-4f59-a279-909de854518f"
             }
           }
         }
@@ -397,7 +401,7 @@
       },
       "material": {
         "type": "basic",
-        "color": "#FFFFFF"
+        "color": "#000000"
       },
       "parentId": "381b144e-ef93-4354-9510-ca490676ac79",
       "components": {
@@ -449,7 +453,7 @@
       },
       "material": {
         "type": "basic",
-        "color": "#FFFFFF"
+        "color": "#3eda72"
       },
       "parentId": "381b144e-ef93-4354-9510-ca490676ac79",
       "components": {
@@ -500,7 +504,7 @@
       },
       "material": {
         "type": "basic",
-        "color": "#FFFFFF"
+        "color": "#20c52b"
       },
       "parentId": "381b144e-ef93-4354-9510-ca490676ac79",
       "components": {
@@ -524,6 +528,87 @@
           "height": 1
         }
       }
+    },
+    "4aad9dd1-6fc2-4f59-a279-909de854518f": {
+      "id": "4aad9dd1-6fc2-4f59-a279-909de854518f",
+      "position": [
+        1.5781156170468549,
+        -0.31094166371837795,
+        0.2027490410024742
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        2.0000000000000013,
+        2.0000000000000013,
+        2.0000000000000013
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0db679c5-bf9f-4f07-b816-8de4efa54f3c",
+      "components": {
+        "39674f89-3857-4b88-afe7-22b7f41ce4c9": {
+          "id": "39674f89-3857-4b88-afe7-22b7f41ce4c9",
+          "name": "AbrirSpotify",
+          "parameters": {
+            "url": "https://open.spotify.com/artist/2LRoIwlKmHjgvigdNGBHNo"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 36,
+        "background": "#ad50ff",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 0,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "BotonSpotify",
+      "order": 12.130939187092583
+    },
+    "516c7f4e-c147-443e-8fe5-2b7b57322a16": {
+      "id": "516c7f4e-c147-443e-8fe5-2b7b57322a16",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4aad9dd1-6fc2-4f59-a279-909de854518f",
+      "components": {},
+      "name": "Icono",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "asset",
+          "asset": "assets/spoti.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 0.08473754778196813
     }
   },
   "spaces": {
