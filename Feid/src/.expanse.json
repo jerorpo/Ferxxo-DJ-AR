@@ -112,7 +112,22 @@
       "geometry": null,
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "components": {},
+      "components": {
+        "1fe84adf-f988-45f7-87c8-6dd882449978": {
+          "id": "1fe84adf-f988-45f7-87c8-6dd882449978",
+          "name": "ControlInicio",
+          "parameters": {
+            "boton": {
+              "type": "entity",
+              "id": "64d82d59-bf85-489c-8c6c-4c39997c4c50"
+            },
+            "mensaje": {
+              "type": "entity",
+              "id": "fd53c260-60e0-4a58-b2ad-631870a6a654"
+            }
+          }
+        }
+      },
       "name": "Objetivo de la imagen",
       "imageTarget": {
         "name": "feid"
@@ -239,20 +254,9 @@
       "geometry": null,
       "material": null,
       "parentId": "0db679c5-bf9f-4f07-b816-8de4efa54f3c",
-      "components": {
-        "bb6f810f-1a9c-4a78-8c1b-3716f05a6179": {
-          "id": "bb6f810f-1a9c-4a78-8c1b-3716f05a6179",
-          "name": "BotonEmpezar",
-          "parameters": {
-            "mensaje": {
-              "type": "entity",
-              "id": "fd53c260-60e0-4a58-b2ad-631870a6a654"
-            }
-          }
-        }
-      },
+      "components": {},
       "ui": {
-        "type": "overlay",
+        "type": "3d",
         "width": 100,
         "height": 36,
         "background": "#ad50ff",
@@ -262,7 +266,8 @@
         "padding": "10",
         "gap": "6",
         "alignItems": "center",
-        "justifyContent": "center"
+        "justifyContent": "center",
+        "ignoreRaycast": false
       },
       "name": "BotonEmpezar",
       "order": 8.994459546846223
