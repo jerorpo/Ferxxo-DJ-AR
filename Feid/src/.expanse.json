@@ -240,25 +240,13 @@
       "material": null,
       "parentId": "0db679c5-bf9f-4f07-b816-8de4efa54f3c",
       "components": {
-        "8156d77f-4e41-44f8-b2de-e890f502d43b": {
-          "id": "8156d77f-4e41-44f8-b2de-e890f502d43b",
-          "name": "IniciarJuego",
+        "bb6f810f-1a9c-4a78-8c1b-3716f05a6179": {
+          "id": "bb6f810f-1a9c-4a78-8c1b-3716f05a6179",
+          "name": "BotonEmpezar",
           "parameters": {
             "mensaje": {
               "type": "entity",
               "id": "fd53c260-60e0-4a58-b2ad-631870a6a654"
-            },
-            "boton": {
-              "type": "entity",
-              "id": "64d82d59-bf85-489c-8c6c-4c39997c4c50"
-            },
-            "escenario": {
-              "type": "entity",
-              "id": "09868db3-04a2-4e42-ae53-b4491b122749"
-            },
-            "personaje": {
-              "type": "entity",
-              "id": "df62e20f-b541-4b07-acdb-0f60eb725d37"
             }
           }
         }

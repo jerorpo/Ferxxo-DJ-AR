@@ -1,19 +1,18 @@
 import * as ecs from '@8thwall/ecs'
 
 ecs.registerComponent({
-  name: 'IniciarJuego',
+  name: 'BotonEmpezar',
 
   schema: {
     mensaje: ecs.eid,
-    boton: ecs.eid,
   },
 
   stateMachine: ({world, eid, schemaAttribute}) => {
     ecs.defineState('esperando')
       .initial()
-      .listen(eid, ecs.input.SCREEN_TOUCH_START, () => {
+      .listen(eid, ecs.input.UI_CLICK, () => {
 
-        const {mensaje, boton} = schemaAttribute.get(eid)
+        const {mensaje} = schemaAttribute.get(eid)
 
         ecs.Scale.set(world, mensaje, {
           x: 0,
@@ -21,13 +20,13 @@ ecs.registerComponent({
           z: 0,
         })
 
-        ecs.Scale.set(world, boton, {
+        ecs.Scale.set(world, eid, {
           x: 0,
           y: 0,
           z: 0,
         })
 
-        console.log('BOTÓN FUNCIONÓ')
+        console.log('EMPEZAR FUNCIONÓ')
       })
   },
 })
