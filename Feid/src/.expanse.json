@@ -340,7 +340,34 @@
       "geometry": null,
       "material": null,
       "parentId": "0db679c5-bf9f-4f07-b816-8de4efa54f3c",
-      "components": {},
+      "components": {
+        "82139f5b-050c-4760-98a4-1008a5c90f89": {
+          "id": "82139f5b-050c-4760-98a4-1008a5c90f89",
+          "name": "ControlMiniJuego",
+          "parameters": {
+            "consola": {
+              "type": "entity",
+              "id": "ed5d0037-040a-4b3c-95dc-acbd2ac17d74"
+            },
+            "controles": {
+              "type": "entity",
+              "id": "2b38dd22-a8d9-4cc2-9cdd-9ac0a0918013"
+            },
+            "disco": {
+              "type": "entity",
+              "id": "2488d6f6-dd3f-4d20-b9bc-a24817dda9f1"
+            },
+            "escenario": {
+              "type": "entity",
+              "id": "09868db3-04a2-4e42-ae53-b4491b122749"
+            },
+            "personaje": {
+              "type": "entity",
+              "id": "df62e20f-b541-4b07-acdb-0f60eb725d37"
+            }
+          }
+        }
+      },
       "name": "MiniJuego",
       "order": 10.875842433266799
     },
@@ -373,9 +400,28 @@
         "color": "#FFFFFF"
       },
       "parentId": "381b144e-ef93-4354-9510-ca490676ac79",
-      "components": {},
+      "components": {
+        "7f0bffd5-f119-438d-84a4-2906fa74ba2d": {
+          "id": "7f0bffd5-f119-438d-84a4-2906fa74ba2d",
+          "name": "TocarObjeto",
+          "parameters": {
+            "controlador": {
+              "type": "entity",
+              "id": "381b144e-ef93-4354-9510-ca490676ac79"
+            }
+          }
+        }
+      },
       "name": "ConsolaDJ",
-      "order": 1.440514548668073
+      "order": 1.440514548668073,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 1,
+          "height": 1,
+          "width": 1
+        }
+      }
     },
     "2b38dd22-a8d9-4cc2-9cdd-9ac0a0918013": {
       "id": "2b38dd22-a8d9-4cc2-9cdd-9ac0a0918013",
@@ -406,9 +452,28 @@
         "color": "#FFFFFF"
       },
       "parentId": "381b144e-ef93-4354-9510-ca490676ac79",
-      "components": {},
+      "components": {
+        "313f5d61-be94-4234-b119-8353a6ca14a3": {
+          "id": "313f5d61-be94-4234-b119-8353a6ca14a3",
+          "name": "TocarObjeto",
+          "parameters": {
+            "controlador": {
+              "type": "entity",
+              "id": "381b144e-ef93-4354-9510-ca490676ac79"
+            }
+          }
+        }
+      },
       "name": "ControlesDJ",
-      "order": 2.7931565788130075
+      "order": 2.7931565788130075,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 1,
+          "height": 1,
+          "width": 1
+        }
+      }
     },
     "2488d6f6-dd3f-4d20-b9bc-a24817dda9f1": {
       "id": "2488d6f6-dd3f-4d20-b9bc-a24817dda9f1",
@@ -438,9 +503,27 @@
         "color": "#FFFFFF"
       },
       "parentId": "381b144e-ef93-4354-9510-ca490676ac79",
-      "components": {},
+      "components": {
+        "e3f72b42-bceb-4b04-9706-247a765af9ff": {
+          "id": "e3f72b42-bceb-4b04-9706-247a765af9ff",
+          "name": "TocarObjeto",
+          "parameters": {
+            "controlador": {
+              "type": "entity",
+              "id": "381b144e-ef93-4354-9510-ca490676ac79"
+            }
+          }
+        }
+      },
       "name": "DiscoDJ",
-      "order": 4.347031389559533
+      "order": 4.347031389559533,
+      "collider": {
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.5,
+          "height": 1
+        }
+      }
     }
   },
   "spaces": {
