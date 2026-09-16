@@ -99,15 +99,15 @@
         0
       ],
       "rotation": [
+        -0.7071067811865475,
         0,
         0,
-        0,
-        1
+        0.7071067811865476
       ],
       "scale": [
-        1,
-        1,
-        1
+        2.9000000000000012,
+        2.9000000000000012,
+        2.9000000000000012
       ],
       "geometry": null,
       "material": null,
@@ -118,6 +118,72 @@
         "name": "feid"
       },
       "order": 2.6154380784996545
+    },
+    "09868db3-04a2-4e42-ae53-b4491b122749": {
+      "id": "09868db3-04a2-4e42-ae53-b4491b122749",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.5,
+        -0.5,
+        -0.4999999999999999,
+        0.5000000000000001
+      ],
+      "scale": [
+        0.06896551724137934,
+        0.06896551724137934,
+        0.06896551724137934
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0db679c5-bf9f-4f07-b816-8de4efa54f3c",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/dj.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "dj.glb",
+      "order": 4.565411080740566
+    },
+    "df62e20f-b541-4b07-acdb-0f60eb725d37": {
+      "id": "df62e20f-b541-4b07-acdb-0f60eb725d37",
+      "position": [
+        0,
+        0.842476236821091,
+        0.5212541755179385
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.5172413793103446,
+        0.5172413793103446,
+        0.5172413793103446
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0db679c5-bf9f-4f07-b816-8de4efa54f3c",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/FerxxoCompleto.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "FerxxoCompleto.glb",
+      "order": 5.899463894439473
     }
   },
   "spaces": {
