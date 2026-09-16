@@ -11,18 +11,16 @@ ecs.registerComponent({
   stateMachine: ({world, eid, schemaAttribute}) => {
     ecs.defineState('esperando')
       .initial()
-      .listen(eid, ecs.input.SCREEN_TOUCH_START, () => {
+      .listen(schemaAttribute.get(eid).boton, ecs.input.UI_CLICK, () => {
 
         const {mensaje, boton} = schemaAttribute.get(eid)
 
-        // Ocultar mensaje
         ecs.Scale.set(world, mensaje, {
           x: 0,
           y: 0,
           z: 0,
         })
 
-        // Ocultar botón
         ecs.Scale.set(world, boton, {
           x: 0,
           y: 0,
