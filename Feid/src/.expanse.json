@@ -132,6 +132,10 @@
             "personaje": {
               "type": "entity",
               "id": "df62e20f-b541-4b07-acdb-0f60eb725d37"
+            },
+            "miniJuego": {
+              "type": "entity",
+              "id": "381b144e-ef93-4354-9510-ca490676ac79"
             }
           }
         }
@@ -314,6 +318,129 @@
         "ignoreRaycast": true
       },
       "order": 1.3772983222507305
+    },
+    "381b144e-ef93-4354-9510-ca490676ac79": {
+      "id": "381b144e-ef93-4354-9510-ca490676ac79",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0,
+        0,
+        0
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0db679c5-bf9f-4f07-b816-8de4efa54f3c",
+      "components": {},
+      "name": "MiniJuego",
+      "order": 10.875842433266799
+    },
+    "ed5d0037-040a-4b3c-95dc-acbd2ac17d74": {
+      "id": "ed5d0037-040a-4b3c-95dc-acbd2ac17d74",
+      "position": [
+        0,
+        0.15,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        0.25,
+        0.8
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 1,
+        "height": 1,
+        "width": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "381b144e-ef93-4354-9510-ca490676ac79",
+      "components": {},
+      "name": "ConsolaDJ",
+      "order": 1.440514548668073
+    },
+    "2b38dd22-a8d9-4cc2-9cdd-9ac0a0918013": {
+      "id": "2b38dd22-a8d9-4cc2-9cdd-9ac0a0918013",
+      "position": [
+        0,
+        0.4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        0.15,
+        0.5
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 1,
+        "height": 1,
+        "width": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "381b144e-ef93-4354-9510-ca490676ac79",
+      "components": {},
+      "name": "ControlesDJ",
+      "order": 2.7931565788130075
+    },
+    "2488d6f6-dd3f-4d20-b9bc-a24817dda9f1": {
+      "id": "2488d6f6-dd3f-4d20-b9bc-a24817dda9f1",
+      "position": [
+        0.7,
+        0.35,
+        0
+      ],
+      "rotation": [
+        0.07845909572784494,
+        0,
+        0,
+        0.996917333733128
+      ],
+      "scale": [
+        0.35,
+        0.08,
+        0.35
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "381b144e-ef93-4354-9510-ca490676ac79",
+      "components": {},
+      "name": "DiscoDJ",
+      "order": 4.347031389559533
     }
   },
   "spaces": {
