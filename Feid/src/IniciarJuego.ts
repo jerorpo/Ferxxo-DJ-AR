@@ -11,7 +11,7 @@ ecs.registerComponent({
   stateMachine: ({world, eid, schemaAttribute}) => {
     ecs.defineState('esperando')
       .initial()
-      .listen(schemaAttribute.get(eid).boton, ecs.input.UI_CLICK, () => {
+      .listen(eid, ecs.input.SCREEN_TOUCH_START, () => {
 
         const {mensaje, boton} = schemaAttribute.get(eid)
 
@@ -27,7 +27,7 @@ ecs.registerComponent({
           z: 0,
         })
 
-        console.log('¡EMPEZÓ EL JUEGO!')
+        console.log('BOTÓN FUNCIONÓ')
       })
   },
 })
