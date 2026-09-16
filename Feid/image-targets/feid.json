@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 85,
+    "left": 0,
+    "width": 1024,
+    "height": 1365,
+    "isRotated": false,
+    "originalWidth": 1024,
+    "originalHeight": 1536
+  },
+  "imagePath": "image-targets/feid_luminance.png",
+  "metadata": null,
+  "name": "feid",
+  "resources": {
+    "originalImage": "feid_original.png",
+    "croppedImage": "feid_cropped.png",
+    "thumbnailImage": "feid_thumbnail.png",
+    "luminanceImage": "feid_luminance.png"
+  },
+  "created": 1789530025918,
+  "updated": 1789530025918
+}
