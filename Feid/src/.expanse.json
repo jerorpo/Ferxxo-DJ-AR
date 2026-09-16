@@ -32,10 +32,10 @@
       "camera": {
         "type": "perspective",
         "xr": {
-          "desktop": "disabled",
-          "xrCameraType": "world",
+          "desktop": "3D",
+          "xrCameraType": "3dOnly",
           "headset": "disabled",
-          "phone": "AR"
+          "phone": "3D"
         }
       },
       "components": {},
@@ -45,11 +45,11 @@
       "name": "Camera",
       "position": [
         0,
-        2,
-        3
+        6.723450687475747,
+        17.977838327919713
       ],
       "rotation": [
-        0.0004436887233141012,
+        0.00044368872331410124,
         0.9659425615285845,
         -0.25875089860082223,
         0.0016563336561801576
