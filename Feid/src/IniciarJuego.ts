@@ -6,32 +6,11 @@ ecs.registerComponent({
   schema: {
     mensaje: ecs.eid,
     boton: ecs.eid,
-    escenario: ecs.eid,
-    personaje: ecs.eid,
   },
 
   stateMachine: ({world, eid, schemaAttribute}) => {
-
-    ecs.defineState('inicio')
+    ecs.defineState('esperando')
       .initial()
-      .onEnter(() => {
-
-        const {escenario, personaje} = schemaAttribute.get(eid)
-
-        // Ocultar escenario
-        ecs.Scale.set(world, escenario, {
-          x: 0,
-          y: 0,
-          z: 0,
-        })
-
-        // Ocultar personaje
-        ecs.Scale.set(world, personaje, {
-          x: 0,
-          y: 0,
-          z: 0,
-        })
-      })
       .listen(eid, ecs.input.SCREEN_TOUCH_START, () => {
 
         const {mensaje, boton} = schemaAttribute.get(eid)
@@ -50,7 +29,7 @@ ecs.registerComponent({
           z: 0,
         })
 
-        console.log('¡EMPEZÓ EL MINI-JUEGO!')
+        console.log('¡EMPEZÓ EL JUEGO!')
       })
   },
 })
