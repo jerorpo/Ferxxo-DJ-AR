@@ -32,10 +32,10 @@
       "camera": {
         "type": "perspective",
         "xr": {
-          "desktop": "3D",
-          "xrCameraType": "3dOnly",
+          "desktop": "disabled",
+          "xrCameraType": "world",
           "headset": "disabled",
-          "phone": "3D"
+          "phone": "AR"
         }
       },
       "components": {},
