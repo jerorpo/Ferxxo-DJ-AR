@@ -309,7 +309,8 @@
         "color": "#ffffff",
         "fontSize": 10,
         "textAlign": "center",
-        "verticalTextAlign": "start"
+        "verticalTextAlign": "start",
+        "ignoreRaycast": true
       },
       "order": 1.3772983222507305
     }
