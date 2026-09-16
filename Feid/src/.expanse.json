@@ -124,6 +124,14 @@
             "mensaje": {
               "type": "entity",
               "id": "fd53c260-60e0-4a58-b2ad-631870a6a654"
+            },
+            "escenario": {
+              "type": "entity",
+              "id": "09868db3-04a2-4e42-ae53-b4491b122749"
+            },
+            "personaje": {
+              "type": "entity",
+              "id": "df62e20f-b541-4b07-acdb-0f60eb725d37"
             }
           }
         }
@@ -228,7 +236,7 @@
         "text": "AYUDA AL FERXXO\nArregla su mesa de DJ para comenzar el show",
         "color": "#ffffff",
         "fontSize": 12,
-        "type": "overlay"
+        "type": "3d"
       },
       "name": "MensajeInicio",
       "order": 7.329680742327094
